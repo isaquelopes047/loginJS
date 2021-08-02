@@ -6,8 +6,10 @@ let acessoNegado = document.querySelector('.acesso_negado');
 
 buttonLogin.addEventListener('click', function(){
 
-    let inputName = document.querySelector('.LoginName').value
-    let inputPass = document.querySelector('.LoginPass').value
+    const inputName = document.querySelector('.LoginName').value
+    const inputPass = document.querySelector('.LoginPass').value
+
+    localStorage.setItem('nome', inputName)
 
     const url = './logado.html';
 
@@ -16,9 +18,9 @@ buttonLogin.addEventListener('click', function(){
         senha;
     }
         const usuario1 = new Usuarios();
-            usuario1.nome = 'admin';
             usuario1.senha = 123;
-            
+            usuario1.nome = 'admin';
+        
         const usuario2 = new Usuarios();
             usuario2.nome = 'Isaque';
             usuario2.senha = 9116;
@@ -47,6 +49,7 @@ buttonLogin.addEventListener('click', function(){
 
         return false;
     }
+
 })
 
 function timeOn(){
