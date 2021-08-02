@@ -1,13 +1,13 @@
 
 let buttonLogin = document.querySelector('.button_login');
 
+let acessoNegado = document.querySelector('.acesso_negado');
+    acessoNegado.classList.add('acesso_negado');
+
 buttonLogin.addEventListener('click', function(){
 
     let inputName = document.querySelector('.LoginName').value
     let inputPass = document.querySelector('.LoginPass').value
-    
-    let acessoNegado = document.querySelector('.acesso_negado');
-        acessoNegado.classList.add('acesso_negado');
 
     const url = './logado.html';
 
@@ -39,24 +39,24 @@ buttonLogin.addEventListener('click', function(){
         return true;
     }
 
-    if(inputName.length == 0){
-
-        acessoNegado.textContent = 'VOCÊ PRECISA DIGITAR ALGO!';
-        
-        return false;
-    }
-
     else{
         acessoNegado.textContent = 'ACESSO NEGADO';
 
+        timeOn();
+        timeOut();
+
         return false;
     }
-
 })
 
-
-function alert(){
+function timeOn(){
     setTimeout(function(){
-        document.querySelector('.acesso_negado').style.display = 'none'
+        acessoNegado = document.querySelector('.acesso_negado').style.display = 'block';
+    }, 50)
+}
+
+function timeOut(){
+    setTimeout(function(){
+        acessoNegado = document.querySelector('.acesso_negado').style.display = 'none';
     }, 3000)
 }

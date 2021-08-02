@@ -8,19 +8,22 @@
     <title>Document</title>
 </head>
 
-<body class="container_body">
-    
+<body>
+
+    <div class="container_alert">
+        <p class="acesso_negado"></p>
+    </div>
+
     <div class="container">
+        <div class="central">
+            <label for="Login"> User </label>
+            <input type="text" class="LoginName">
 
-        <label for="Login"> User </label>
-        <input type="text" class="LoginName">
+            <label for="Login"> Password </label>
+            <input type="password" class="LoginPass">
 
-        <label for="Login"> Password </label>
-        <input type="password" class="LoginPass">
-
-        <button class="button_login" onclick="alert()">Entrar</button>
-        <P class="acesso_negado"></P>
-
+            <button class="button_login">Entrar</button>
+        </div>
     </div>
 
     <script src="./main.js"></script>
