@@ -2,6 +2,7 @@
 let buttonLogin = document.querySelector('.button_login');
 
 let acessoNegado = document.querySelector('.acesso_negado');
+    acessoNegado.textContent = 'ACESSO NEGADO'
     acessoNegado.classList.add('acesso_negado');
 
 buttonLogin.addEventListener('click', function(){
@@ -42,7 +43,7 @@ buttonLogin.addEventListener('click', function(){
     }
 
     else{
-        acessoNegado.textContent = 'ACESSO NEGADO';
+        acessoNegado;
 
         timeOn();
         timeOut();

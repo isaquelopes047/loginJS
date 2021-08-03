@@ -13,26 +13,33 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li class="nameUser"></li>
-            </ul>
-        </nav>
+    <header class="container_nav">
+        <ul>
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i> <li class="nameUser"></li>
+        </ul>
     </header>
 
-    <p class="bemVindo"></p>
+    <main>
+        <p class="bemVindo"></p>
 
-    <div class="container_produtos_all">
-        <div class="container_produtos">
-            <i class="fa fa-truck" aria-hidden="true"></i>
-            <p>Calcular Diaria</p>
-        </div>
+        <div class="container_produtos_all">
+            <div class="container_produtos">
+                <i class="fa fa-truck" aria-hidden="true"></i>
+                <p>Calcular Diaria</p>
+            </div>
 
-        <div class="container_produtos">
-            <i class="fa fa-calendar" aria-hidden="true"></i>
-            <p>Calcular Folga</p>
+            <div class="container_produtos">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <p>Calcular Folga</p>
+            </div>
         </div>
+    </main>
+
+    <div class="buttonInfo">
+        <button class="buttonHelp">
+            <i class="fa fa-question" aria-hidden="true"></i>
+            <p class="classTextHelp"></p>
+        </button>
     </div>
 
     <script src="./JS/logado.js"></script>

@@ -1,15 +1,15 @@
 body{
     padding: 0;
     margin: 0;
-    background-image: url('../IMG/backOne.png');
-    background-repeat: no-repeat;
+    background-image: url('../IMG/backTwo.png');
+    background-size: cover;
 }
 
 .bemVindo{
     width: 100%;
     height: auto;
     text-align: center;
-    font-size: 60px;
+    font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 900;
     color: #333;
@@ -32,8 +32,8 @@ body{
     flex-direction: column;
     width: 220px;
     height: 140px;
-    background-color: #1e516e;
-    margin: 0px 50px;
+    background-color: #1e4f6c;
+    margin: 50px 50px;
     border-radius: 10px;
     transition: 0.4s;
 }
@@ -51,14 +51,76 @@ body{
     height: auto;
     background-color: #1B98E0;
     border-radius:  3px;
-    padding: 10px;
+    padding: 5px 5px;
     text-align: center;
     font-size: 20px;
     color: rgb(255, 255, 255);
     font-family: sans-serif;
-    font-weight: 600;
     margin-top:10px;
+    letter-spacing: 1px;
 }
 
 /* NAV */
 
+.container_nav{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(80, 80, 80, 0.295);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.container_nav i{
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.container_nav ul{
+    margin: 0;
+    padding: 0px 50px;
+    height: 50px;
+    background-color: #1B98E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_nav ul:hover{
+    background-color: #67a8cd;
+    transition: 0.4s;
+}
+.container_nav li{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+/* Button info footer */
+
+.buttonInfo{
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow:hidden;
+}
+.buttonInfo button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 15px;
+    border: none;
+    background-color: #1B98E0;
+    cursor: pointer;
+}
+.buttonInfo i{
+    font-size: 20px;
+    color: #fff;
+}
+.classTextHelp{
+    display: none;
+    color: #fff;
+}
